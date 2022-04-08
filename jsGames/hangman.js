@@ -17,7 +17,7 @@ function hangman(word) {
     let win = false;
     let hangman = ""
     while (wrong < (stages.length)) {
-        let char = input.question('Please Hago kuch! : '+'\n')
+        let char = input.question('guess a letter : '+'\n')
         if (wList.includes(char)) {
             cind = wList.indexOf(char);
             board.splice(cind, 1, char)
@@ -41,7 +41,7 @@ function hangman(word) {
     };
     if (!win) {
         console.log(hangman);
-        console.log(`loose ;) [ ${word} ] tha word`);
+        console.log(`you loose;) [ ${word} ] was the word to guess`);
     };
 
 };
