@@ -46,5 +46,5 @@ function hangman(word) {
 
 };
 
-let word = 'Hello'
+let word = 'samantha'
 hangman(word)
